@@ -1,0 +1,176 @@
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 60vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 60vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0 rgba(0,0,0,.75);
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    -o-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -ms-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .4;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 15px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1,
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5,
+.fade-carousel .slides .slide-6,
+.fade-carousel .slides .slide-7,
+.fade-carousel .slides .slide-8,
+.fade-carousel .slides .slide-9,
+.fade-carousel .slides .slide-10,
+.fade-carousel .slides .slide-12,
+.fade-carousel .slides .slide-11,
+.fade-carousel .slides .slide-13,
+.fade-carousel .slides .slide-14,
+.fade-carousel .slides .slide-15,
+.fade-carousel .slides .slide-16,
+.fade-carousel .slides .slide-17,
+.fade-carousel .slides .slide-18,
+.fade-carousel .slides .slide-19,
+.fade-carousel .slides .slide-20 {
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+    background-image: url(slide/1.JPG);
+}.fade-carousel .slides .slide-2 {
+    background-image: url(slide/2.JPG);
+}.fade-carousel .slides .slide-3 {
+    background-image: url(slide/3.JPG);
+}.fade-carousel .slides .slide-4 {
+    background-image: url(slide/4.JPG);
+}.fade-carousel .slides .slide-5 {
+    background-image: url(slide/5.JPG);
+}.fade-carousel .slides .slide-6 {
+    background-image: url(slide/6.JPG);
+}.fade-carousel .slides .slide-7 {
+    background-image: url(slide/7.JPG);
+}.fade-carousel .slides .slide-8 {
+    background-image: url(slide/7.JPG);
+}.fade-carousel .slides .slide-9 {
+    background-image: url(slide/9.JPG);
+}.fade-carousel .slides .slide-10 {
+    background-image: url(slide/10.JPG);
+}.fade-carousel .slides .slide-11 {
+    background-image: url(slide/11.JPG);
+}.fade-carousel .slides .slide-12 {
+    background-image: url(slide/12.JPG);
+}.fade-carousel .slides .slide-13 {
+    background-image: url(slide/13.JPG);
+}.fade-carousel .slides .slide-14 {
+    background-image: url(slide/14.JPG);
+}.fade-carousel .slides .slide-15 {
+    background-image: url(slide/15.JPG);
+}.fade-carousel .slides .slide-16 {
+    background-image: url(slide/16.JPG);
+}.fade-carousel .slides .slide-17 {
+    background-image: url(slide/17.JPG);
+}
+.fade-carousel .slides .slide-20 {
+    background-image: url(slide/20.jpg);
+}.fade-carousel .slides .slide-21 {
+    background-image: url(slide/21.jpg);
+}.fade-carousel .slides .slide-22 {
+    background-image: url(slide/22.JPG);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 580px){
+    .hero { width: 880px;  }
+}
+@media screen and (max-width: 140px){
+    .hero h1 { font-size: 4em; }
+}
